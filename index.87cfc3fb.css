@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+}
+.container {
+  padding: 0 2em;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+.container .wrapper {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  overflow: hidden;
+}
+.container .wrapper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+.container .wrapper .card .card-content {
+  justify-self: flex-start;
+}
+.container .wrapper .card .card-content h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+  padding: 1em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.container .wrapper .card .card-content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+}
+.container .wrapper .card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #e38826;
+  padding: 1em 2em;
+  margin: 1em 0;
+  border-radius: 4em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  -ms-border-radius: 4em;
+  -o-border-radius: 4em;
+}
+.container .wrapper .card:first-child {
+  background-color: #e38826;
+}
+.container .wrapper .card:nth-child(2) {
+  background-color: #006970;
+}
+.container .wrapper .card:last-child {
+  background-color: #004241;
+}
+.attribution {
+  margin-bottom: 2em;
+}
+@media (min-width: 375px) {
+  .container .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container .wrapper .card {
+    flex: 1 1 50%;
+    min-width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .container .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container .wrapper .card {
+    flex: 1 1 33.33%;
+    min-width: auto;
+  }
+}
+/*# sourceMappingURL=index.87cfc3fb.css.map */
